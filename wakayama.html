@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wakayama</title>
     <style>
-        #tittlee{font-size: 200px;
-
+        html,body {
+            height: 80%;
+            width: 80%;
+        }
+        #tittlee{
+            font-size: 200px;
+            text-align: center;
+            transform: rotate(-10deg);
+            
+        }
+        body{
+            background-image:url('IMG_0910.jpeg');
+            background-size:cover;
+            background-position: center;
+            background-repeat:no-repeat;
         }
     </style>
+    <script src="wakayama.js"></script>
 </head>
 <body>
     <h1 id="tittlee">Wakayama</h1>
+    <script>
+        document.body.addEventListener('click',function(event){
+    const screenWidth = window.innerWidth;
+    const clickX = event.clientX;
+    if(clickX > screenWidth / 2){
+        alert("tes")
+        //window.location.href = 'wakayama2.html';
+    }
+});
+    </script>
 </body>
 </html>
